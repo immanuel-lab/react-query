@@ -1,0 +1,214 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "name": "Razor",
+      "category": "Personal Care",
+      "price": 10.99,
+      "quantity": 50
+    },
+    {
+      "id": 2,
+      "name": "Milk",
+      "category": "Grocery",
+      "price": 3.49,
+      "quantity": 100
+    },
+    {
+      "id": 3,
+      "name": "Bread",
+      "category": "Grocery",
+      "price": 2.99,
+      "quantity": 75
+    },
+    {
+      "id": 4,
+      "name": "Toothpaste",
+      "category": "Personal Care",
+      "price": 4.99,
+      "quantity": 30
+    },
+    {
+      "id": 5,
+      "name": "Notebook",
+      "category": "Stationery",
+      "price": 1.99,
+      "quantity": 200
+    },
+    {
+      "id": 6,
+      "name": "Apples",
+      "category": "Produce",
+      "price": 1.49,
+      "quantity": 50
+    },
+    {
+      "id": 7,
+      "name": "Bananas",
+      "category": "Produce",
+      "price": 0.99,
+      "quantity": 100
+    },
+    {
+      "id": 8,
+      "name": "T-shirt",
+      "category": "Clothing",
+      "price": 14.99,
+      "quantity": 25
+    },
+    {
+      "id": 9,
+      "name": "Socks",
+      "category": "Clothing",
+      "price": 3.99,
+      "quantity": 50
+    },
+    {
+      "id": 10,
+      "name": "Shampoo",
+      "category": "Personal Care",
+      "price": 7.99,
+      "quantity": 20
+    },
+    {
+      "id": 11,
+      "name": "Pasta",
+      "category": "Grocery",
+      "price": 1.79,
+      "quantity": 40
+    },
+    {
+      "id": 12,
+      "name": "Cheese",
+      "category": "Dairy",
+      "price": 5.49,
+      "quantity": 30
+    },
+    {
+      "id": 13,
+      "name": "Butter",
+      "category": "Dairy",
+      "price": 3.99,
+      "quantity": 25
+    },
+    {
+      "id": 14,
+      "name": "Eggs",
+      "category": "Dairy",
+      "price": 2.99,
+      "quantity": 50
+    },
+    {
+      "id": 15,
+      "name": "Chicken Breast",
+      "category": "Meat",
+      "price": 8.99,
+      "quantity": 20
+    },
+    {
+      "id": 16,
+      "name": "Cereal",
+      "category": "Grocery",
+      "price": 4.49,
+      "quantity": 40
+    },
+    {
+      "id": 17,
+      "name": "Lettuce",
+      "category": "Produce",
+      "price": 1.29,
+      "quantity": 30
+    },
+    {
+      "id": 18,
+      "name": "Tomatoes",
+      "category": "Produce",
+      "price": 2.49,
+      "quantity": 40
+    },
+    {
+      "id": 19,
+      "name": "Potatoes",
+      "category": "Produce",
+      "price": 1.99,
+      "quantity": 60
+    },
+    {
+      "id": 20,
+      "name": "Onions",
+      "category": "Produce",
+      "price": 0.79,
+      "quantity": 50
+    },
+    {
+      "id": 21,
+      "name": "Applesauce",
+      "category": "Canned Goods",
+      "price": 2.29,
+      "quantity": 25
+    },
+    {
+      "id": 22,
+      "name": "Peanut Butter",
+      "category": "Canned Goods",
+      "price": 3.79,
+      "quantity": 30
+    },
+    {
+      "id": 23,
+      "name": "Jelly",
+      "category": "Canned Goods",
+      "price": 2.99,
+      "quantity": 20
+    },
+    {
+      "id": 24,
+      "name": "Spaghetti Sauce",
+      "category": "Canned Goods",
+      "price": 2.49,
+      "quantity": 40
+    },
+    {
+      "id": 25,
+      "name": "Rice",
+      "category": "Grains",
+      "price": 3.29,
+      "quantity": 50
+    },
+    {
+      "id": 26,
+      "name": "Quinoa",
+      "category": "Grains",
+      "price": 5.99,
+      "quantity": 20
+    },
+    {
+      "id": 27,
+      "name": "Black Beans",
+      "category": "Canned Goods",
+      "price": 1.99,
+      "quantity": 30
+    },
+    {
+      "id": 28,
+      "name": "Tuna",
+      "category": "Canned Goods",
+      "price": 1.49,
+      "quantity": 40
+    },
+    {
+      "id": 29,
+      "name": "Salmon",
+      "category": "Seafood",
+      "price": 9.99,
+      "quantity": 15
+    },
+    {
+      "id": 30,
+      "name": "Yogurt",
+      "category": "Dairy",
+      "price": 2.49,
+      "quantity": 60
+    }
+  ]
+}
