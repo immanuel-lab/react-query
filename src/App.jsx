@@ -6,10 +6,12 @@
 // import Scroll from "./Framer Motions/Scroll"
 // import Query from "./components/query"
 
-import Grid from "./components/Grid"
+// import Grid from "./components/Grid"
 
 // import Debounce from "./components/Debounce"
-import Dragdrop from "./components/Dragdrop"
+// import Dragdrop from "./components/Dragdrop"
+// import Dragdrop2 from "./components/Dragdrop2"
+import FileUpload from "./components/FileUpload"
 // import Memocallback from "./components/Memocallback"
 // import Searchcaraousal from "./components/Searchcaraousal"
 
@@ -38,7 +40,11 @@ function App() {
 </BrowserRouter>  */}
 {/* <Searchcaraousal/> */}
 {/* <Debounce/> */}
-<Dragdrop/>
+{/* <Dragdrop/> */}
+{/* <Dragdrop2/> */}
+
+<FileUpload/>
+
 {/* <Memocallback/> */}
 {/* <Register/> */}
 {/* <Scroll/> */}
@@ -48,7 +54,7 @@ function App() {
 
 {/* <Flex/> */}
 
-<Grid/>
+{/* <Grid/> */}
 
     </>
   )
