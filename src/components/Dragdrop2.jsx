@@ -73,54 +73,105 @@
 
 // drag and drop into any place
 
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
 
-function Dragdrop2() {
-  const [position, setPosition] = useState({ x: 550, y: 250 }); // Initial position
+// function Dragdrop2() {
+//   const [position, setPosition] = useState({ x: 550, y: 250 }); // Initial position
 
 
-  const handleDragOver = (e) => {
-    e.preventDefault();
-  };
+//   const handleDragOver = (e) => {
+//     e.preventDefault();
+//   };
 
-  const handleDrop = (e) => {
+//   const handleDrop = (e) => {
     
 
-    setPosition({
-      x: e.clientX ,
-      y: e.clientY 
-    });
-  };
+//     setPosition({
+//       x: e.clientX ,
+//       y: e.clientY 
+//     });
+//   };
 
-  return (
-    <>
-      <div
-        className='relative w-full h-screen bg-gray-100'
-        onDragOver={handleDragOver}
-        onDrop={handleDrop}
-      >
-        {/* Draggable Element */}
-        <div
-          draggable="true"
+//   return (
+//     <>
+//       <div
+//         className='relative w-full h-screen bg-gray-100'
+//         onDragOver={handleDragOver}
+//         onDrop={handleDrop}
+//       >
+//         {/* Draggable Element */}
+//         <div
+//           draggable="true"
    
-          style={{
-            position: 'absolute',
-            top: `${position.y}px`,
-            left: `${position.x}px`,
-            cursor: 'grab'
-          }}
-          className='p-4 bg-green-400 text-white rounded-md shadow-lg'
-        >
-          Drag this
-        </div>
-      </div>
-    </>
-  );
-}
+//           style={{
+//             position: 'absolute',
+//             top: `${position.y}px`,
+//             left: `${position.x}px`,
+//             cursor: 'grab'
+//           }}
+//           className='p-4 bg-green-400 text-white rounded-md shadow-lg'
+//         >
+//           Drag this
+//         </div>
+//       </div>
+//     </>
+//   );
+// }
 
-export default Dragdrop2;
+// export default Dragdrop2;
 
 
 
+
+
+
+
+// import React, { useState } from 'react';
+
+// function Dragdrop2() {
+//   const [position, setPosition] = useState({ x: 100, y: 100 }); 
+
+//   const handleDragOver = (e) => {
+//     e.preventDefault();
+//   };
+
+//   const handleDrop = (e) => {
+//     e.preventDefault();
+//     const offsetX = e.dataTransfer.getData('drag-offset-x');
+//     const offsetY = e.dataTransfer.getData('drag-offset-y');
+
+//     setPosition({
+//         x: e.clientX - offsetX,
+//         y: e.clientY - offsetY
+//       });
+
+   
+   
+// };
+
+//   return (
+//     <div
+//       className='relative w-full h-screen bg-gray-100'
+//       onDragOver={handleDragOver}
+//       onDrop={handleDrop}
+//     >
+//       {/* Draggable Element */}
+//       <div
+//         draggable="true"
+//         style={{
+//           position: 'absolute',
+//           top: `${position.y}px`,
+//           left: `${position.x}px`,
+//           cursor: 'grab'
+//         }}
+//         className='p-4 bg-green-400 text-white rounded-md shadow-lg'
+//       >
+//         Drag this
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default Dragdrop2;
 
 
