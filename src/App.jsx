@@ -9,9 +9,10 @@
 // import Grid from "./components/Grid"
 
 // import Debounce from "./components/Debounce"
-// import Dragdrop from "./components/Dragdrop"
+import Dragdrop from "./components/Dragdrop"
 // import Dragdrop2 from "./components/Dragdrop2"
-import FileUpload from "./components/FileUpload"
+// import FileUpload from "./components/FileUpload"
+// import Resizewindow from "./components/resizewindow"
 // import Memocallback from "./components/Memocallback"
 // import Searchcaraousal from "./components/Searchcaraousal"
 
@@ -40,10 +41,11 @@ function App() {
 </BrowserRouter>  */}
 {/* <Searchcaraousal/> */}
 {/* <Debounce/> */}
-{/* <Dragdrop/> */}
+<Dragdrop/>
 {/* <Dragdrop2/> */}
 
-<FileUpload/>
+{/* <FileUpload/> */}
+{/* <Resizewindow/> */}
 
 {/* <Memocallback/> */}
 {/* <Register/> */}
