@@ -9,7 +9,7 @@
 // import Grid from "./components/Grid"
 
 // import Debounce from "./components/Debounce"
-import Dragdrop from "./components/Dragdrop"
+// import Dragdrop from "./components/Dragdrop"
 // import Dragdrop2 from "./components/Dragdrop2"
 // import FileUpload from "./components/FileUpload"
 // import Resizewindow from "./components/resizewindow"
@@ -17,54 +17,86 @@ import Dragdrop from "./components/Dragdrop"
 // import Searchcaraousal from "./components/Searchcaraousal"
 
 // import Page from "./Framer Motions/Page1"
-// import {BrowserRouter,Route,Routes} from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 //  import Flex from "./components/Flex"
 
+// import Debouncetwo from "./components/Debouncetwo"
+// import Debounce3 from "./components/Debounce3"
+
+// import Address from "./components/Address"
+
+// import Callbacks from "./components/Callbacks"
+
+// import  Oneback from "./callbacks/Oneback"
+// import Twocallback from "./callbacks/Twocallback"
+
+// import Notifications1 from "./components/Notifications1"
+// import Infinitescroll from "./components/Infinitescroll"
+// import Infinitescroll2 from "./components/Infinitescroll2"
+
+import FileUpload from "./components/FileUpload";
+import InfiniteTask from "./components/InfiniteTask";
+
+import Navbar from "./components/Navbar";
+
 function App() {
-
-
   return (
     <>
-    {/* <p className='text-center text-red-500 text-3xl'>POKEMON</p> */}
-    {/* <Query/> */}
-    {/* <Datafetch/> */}
-    {/* <Effectasync/> */}
+      {/* <p className='text-center text-red-500 text-3xl'>POKEMON</p> */}
+      {/* <Query/> */}
+      {/* <Datafetch/> */}
+      {/* <Effectasync/> */}
 
-
-
- {/* <BrowserRouter>
+      {/* <BrowserRouter>
 <Routes>
   <Route path="/" element={<Register/>} />
   <Route path="/login" element={<Login/>} />
 </Routes>
 
 </BrowserRouter>  */}
-{/* <Searchcaraousal/> */}
-{/* <Debounce/> */}
-<Dragdrop/>
-{/* <Dragdrop2/> */}
+      {/* <Searchcaraousal/> */}
+      {/* <Debounce/> */}
+      {/* <Dragdrop/> */}
+      {/* <Dragdrop2/> */}
 
-{/* <FileUpload/> */}
-{/* <Resizewindow/> */}
+      {/* <Debouncetwo/> */}
 
-{/* <Memocallback/> */}
-{/* <Register/> */}
-{/* <Scroll/> */}
-{/* <Abort/> */}
+      {/* <Debounce3/> */}
 
-{/* <Page/> */}
+      {/* <FileUpload/> */}
+      {/* <Resizewindow/> */}
 
-{/* <Flex/> */}
+      {/* <Memocallback/> */}
+      {/* <Register/> */}
+      {/* <Scroll/> */}
+      {/* <Abort/> */}
 
-{/* <Grid/> */}
+      {/* <Page/> */}
 
+      {/* <Flex/> */}
+
+      {/* <Grid/> */}
+
+      {/* <Address/> */}
+
+      {/* <Oneback/> */}
+
+      {/* <Twocallback/> */}
+
+      {/* <Notifications1/> */}
+
+      {/* <Infinitescroll/> */}
+      {/* <Infinitescroll2/> */}
+
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<InfiniteTask />} />
+          <Route path="/fileupload" element={<FileUpload />} />
+        </Routes>
+      </BrowserRouter>
     </>
-  )
+  );
 }
 
-export default App
-
-
-
-
-
+export default App;
