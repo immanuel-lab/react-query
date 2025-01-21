@@ -99,25 +99,25 @@ function Notifications1() {
 
   useEffect(() => {
     let notification;
-    document.addEventListener("visibilitychange", () => {
+    const handleVisibilityChange = () => {
       if (document.visibilityState === "hidden") {
         Notification.requestPermission().then((perm) => {
           if (perm === "granted") {
             notification = new Notification("New Message", {
-              body: "you have left the page..please come back!!!",
+              body: "You have left the page... please come back!!!",
               tag: "welcome",
             });
           } else {
-            alert("please turn on notification");
+            alert("Please turn on notifications.");
           }
         });
-      } else {
+      } else if (notification) {
         notification.close();
       }
-    });
-
+    };
+    document.addEventListener("visibilitychange", handleVisibilityChange);
     return () => {
-      document.removeEventListener("visibilitychange", () => {});
+      document.removeEventListener("visibilitychange", handleVisibilityChange);
     };
   }, []);
 
