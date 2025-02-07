@@ -2,9 +2,9 @@
 // import Datafetch from "./components/Datafetch"
 // import Effectasync from "./components/Effectasync"
 // import Login from "./components/Login"
-// import Register from "./components/Register"
+// import Register from "./components/Register";
 // import Scroll from "./Framer Motions/Scroll"
-// import Query from "./components/query"
+// import Query from "./components/query";
 
 // import Grid from "./components/Grid"
 
@@ -17,7 +17,7 @@
 // import Searchcaraousal from "./components/Searchcaraousal"
 
 // import Page from "./Framer Motions/Page1"
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+// import { BrowserRouter, Route, Routes } from "react-router-dom";
 //  import Flex from "./components/Flex"
 
 // import Debouncetwo from "./components/Debouncetwo"
@@ -30,20 +30,21 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 // import  Oneback from "./callbacks/Oneback"
 // import Twocallback from "./callbacks/Twocallback"
 
-// import Notifications1 from "./components/Notifications1"
+// import Notifications1 from "./components/Notifications1";
 // import Infinitescroll from "./components/Infinitescroll"
-// import Infinitescroll2 from "./components/Infinitescroll2"
+import Infinitescroll2 from "./components/Infinitescroll2"
+// import Forms from "./components/Forms";
 
-import FileUpload from "./components/FileUpload";
-import InfiniteTask from "./components/InfiniteTask";
+// import FileUpload from "./components/FileUpload";
+// import InfiniteTask from "./components/InfiniteTask";
 
-import Navbar from "./components/Navbar";
+// import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <>
       {/* <p className='text-center text-red-500 text-3xl'>POKEMON</p> */}
-      {/* <Query/> */}
+      {/* <Query /> */}
       {/* <Datafetch/> */}
       {/* <Effectasync/> */}
 
@@ -83,18 +84,21 @@ function App() {
 
       {/* <Twocallback/> */}
 
-      {/* <Notifications1/> */}
+      {/* <Notifications1 /> */}
 
       {/* <Infinitescroll/> */}
-      {/* <Infinitescroll2/> */}
+      <Infinitescroll2/>
+      {/* <InfiniteTask /> */}
 
-      <BrowserRouter>
+      {/* <BrowserRouter>
         <Navbar />
         <Routes>
           <Route path="/" element={<InfiniteTask />} />
           <Route path="/fileupload" element={<FileUpload />} />
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
+
+      {/* <Forms /> */}
     </>
   );
 }

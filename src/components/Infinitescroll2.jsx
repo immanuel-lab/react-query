@@ -1,67 +1,96 @@
 import React, { useEffect, useState } from 'react'
-import InfiniteScroll from 'react-infinite-scroll-component';
+import axios from 'axios'
 
-function Infinitescroll2() {
 
-    const[data,setData]=useState([])
-    const [page, setPage] = useState(1);
-    const [hasMore, setHasMore] = useState(true);
-    const url = `http://localhost:5000/items?page=${page}&limit=10`;
+export default function Infinitescroll2() {
+
+  const[isLoading,setIsLoading]=useState(false)
+  const[data,setData]=useState([])
+const[error,setError]=useState(false)
+const[hasNextPage,setHasNextPage]=useState(true)
+const [pageNumber, setPageNumber] = useState(1);
+
+
+
+useEffect(()=>{
+ const abortController = new AbortController();
+const loadData= async () => {
+  
+
+  setIsLoading(true);
+  try {
     
-    useEffect(() => {
-        fetch(url)
-          .then(response => response.json())
-          .then(newData => {
-            console.log('Fetched data:', newData);
-            if (newData && newData.length > 0) {
-              if (data.length === 0) {
-                setData(newData);
-              } else {
-                setData([...data, ...newData]);
-              }
-              if (newData.length < 10) {
-                setHasMore(false);
-              }
-            } else {
-              setHasMore(false);
-            }
-          })
-          .catch(error => console.error('Error fetching data:', error));
-      }, [page]);
+    const response = await axios.get(`http://localhost:8000/product-categories?page=${pageNumber}`
+    , {
+      signal: abortController.signal,
+    }
+  );
 
-      const fetchMoreData = () => {
-        if (!hasMore) return;
-        setPage(page + 1);
-      };
+   
+    
+  setData(prevData => [...prevData, ...response.data.results]);
+
+
+   if(!response.data.next){
+    setHasNextPage(false)
+   }
+  
+  } catch (error) {
+  setError(error.message)
+  } finally {
+    setIsLoading(false);
+  }
+};
+
+loadData()
+return ()=> abortController.abort() 
+},[pageNumber])
+
+
+
+
+
+
+  const handleScroll = () => {
+    // console.log(window.innerHeight)
+    
+    if ( window.scrollY +window.innerHeight >= document.body.offsetHeight-50) {
+      if (hasNextPage) {
+        setPageNumber(prevPageNumber => prevPageNumber + 1);
+      }
+    }
+  };
+
+
+useEffect(()=>{
+window.addEventListener("scroll",handleScroll)
+return()=>window.removeEventListener("scroll",handleScroll)
+},[hasNextPage])
+
 
 
   return (
-    <div className='flex flex-col items-center '>
-        <h1 className='text-2xl text-[#ab1e17] mt-3'>infinite scroll</h1>
-     
-     <div className='mt-5'>
-        <InfiniteScroll
-        dataLength={data.length}
-        next={fetchMoreData}
-        hasMore={hasMore}
-        >
-     {  data.map((item, index) => (
-          <div key={index}>
-            <div className='text-2xl border px-4 py-3 mb-3'>
-                 {item.id}<br></br>
-                {item.name}<br></br>
-                {item.category}<br></br>
-                {item.price}<br></br>
-                {item.quantity}
-                </div>
-          </div>
-        ))}
-       </InfiniteScroll>
+    <div className='flex flex-col items-center gap-y-10'>
+      <p className='text-4xl'>food center</p>
+      {isLoading && <p>....loading</p>}
+      {error && <p>{error}</p>}
+      {data.map((item,index)=>(
+<div key={index} className='mb-2'>
+{item.id}
+{item.category_name}
+<img src={item.category_image} width={350} height={40}/>
 
-                
-     </div>
+</div>
+)
+)      
+
+      }
+{!hasNextPage && <p className='mb-2'>end of results...</p>}
+
     </div>
   )
 }
 
-export default Infinitescroll2
+
+
+
